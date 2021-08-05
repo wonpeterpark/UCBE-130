@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    }
+
+ h1 h2 {
+     font-weight: 700;
+ }
+ h1 {
+     font-size: large;
+ }
+ h2 {
+     font-size: medium;
+ }
+ p {
+     font-weight: 400;
+ }
+ strong {
+     font-size: 25px;
+     font-weight: 700;
+ }
+
+.light-font {
+    font-weight: 300;
+}
+.italic-font {
+    font-style: italic;
+}
+bold-font {
+    font-weight: 700;
+}
+regular-font {
+    font-weight: 400;
+}
+youtube-icon {
+    font-size: ;
+    color: red;
+}
+
+/*****************************************************************/
+/* Bootstrap grid container and common portion css classes begin */
+/*****************************************************************/
+.grid-container {
+     max-width: 1200px;
+}
+
+/*
+.flexitem {
+    display: flex;
+    align-items: center;
+    min-height: 6.25rem;
+    padding: 1rem;
+}
+*/
+
+
+
+.my-hero-img {
+    width: 100%;
+    height: 300px;
+}
+.my-footer {
+    background-color:yellow;
+}
+/***************************************************************/
+/* Bootstrap grid container and common portion css classes end */
+/***************************************************************/
+
+/******************************************/
+/* Two decades dedicate css classes begin */
+/******************************************/
+.decade-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-color: green;
+    border-style: solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.decade-title {
+     color: black;
+     text-shadow: 3px 3px 3px #cccc;
+     text-align: center;
+     text-decoration: underline;
+     background-color: ivory;
+     order: 1;
+}           
+.decade-text {
+    color: black;
+    padding: 0 5px 0 5px;
+}
+@media screen and (min-width: 320px) {
+    .decade-text {
+        order: 3;
+    }
+    .decade-picture-wrapper {
+        order: 2;
+    }
+}
+@media screen and (min-width: 550px) {
+    .decade-text {
+        order: 2;
+    }
+    .decade-picture-wrapper {
+        order: 3;
+    }
+}
+
+.decade-picture-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.decade-pictuer-wrapped-item {
+     margin-top: 30px;
+     margin-bottom: 30px;
+     border-radius: 7px;
+}
+/****************************************/
+/* Two decades dedicate css classes end */
+/****************************************/
+
+/*********************************************/
+/* Header area including dropdown menu begin */
+/*********************************************/
+.header-wrap.ui-menu { 
+    width: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+a.deco-none {
+    text-decoration: none;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: none;
+}
+.ui-widget.ui-widget-content {
+    border: none;
+}
+.ui-widget {
+    background: none;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    margin: 10px auto 10px 5px;
+    margin-right: auto;
+    height: 50px;
+    position: relative;
+}
+.header-wrap {
+    display: flex;
+    height: 70px;
+    background-color: rgba(0, 32, 62, 0.3);
+}
+.sub-down {
+    top: 50px;
+    left: -135px;
+    background-color: lightskyblue;
+}
+/*******************************************/
+/* Header area including dropdown menu end */
+/*******************************************/
