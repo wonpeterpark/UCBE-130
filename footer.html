@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Year 2021</title>
+       <meta charset="utf-8" />
+       <!-- Including the Bootstarp grid-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <!-- Including Google Open Sans and serif fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" 
+            rel="stylesheet">
+
+       <!-- Including material design icons  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+       
+       <link rel="stylesheet" href="./assets/css/mycss.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      
+       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+       <!-- Following link getting the error -->
+       <link rel="stylesheet" href="/resources/demos/style.css">
+
+       <!-- Lightbox stuffs -->
+       <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+
+<style>
+.footer-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 150px;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: rgba(0, 32, 62, 0.3);
+}
+.footer-logo {
+    height: 150px;
+}   
+.no-deco {
+
+    text-decoration: none;
+}
+.footer-listitem {
+    margin-left: 1rem;
+}
+.footer-lastitem {
+    margin-right: auto;
+}
+</style>
+       
+   </head>
+
+   <body>
+       <div class="container">
+            <footer>
+                <div class="row">
+                    
+                    <div class="col-12">
+                        <div class="footer-wrap">
+                            <div class="footer-listitem">
+                                <a href="./index.html"><img src="./assets/images/UCBE130logo.png" class="footer-logo"> </a>
+                            </div> 
+
+                            <div  class="footer-lastitem">
+                                <p>Help me this will work for me</p>
+                                <a href="https://www.youtube.com/channel/UCZAXKyvvIV4uU4YvP5dmrmA" class="no-deco">
+                                    <i class="zmdi zmdi-hc-3x zmdi-youtube-play"></i>
+                                </a>
+                                <a href="https://www.facebook.com/UCBerkeley/" class="no-deco">
+                                    <img src="https://img.icons8.com/color/48/000000/facebook.png">
+                                </a>
+                                <a href="https://twitter.com/UCBerkeley/"  class="no-deco">
+                                    <i class="zmdi zmdi-hc-3x zmdi-twitter-box"></i>
+                                </a>
+                            </div>
+                        </div>         
+                    </div>
+ 
+                </div>  
+           </footer>
+           
+       </div>
+
+              <!-- jQuery CDN minified link -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+       <script src="./assets/js/lightbox.min.js"></script>
+       
+       <!--script src="https://code.jquery.com/jquery-1.12.4.js"></script-->
+       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+       <script>
+            $(document).ready(function() { 
+                $('.toggle-button').on('click', function(){
+                    const buttonText = $(this).text().toLowerCase();
+                    $(this).prev('.remainder-text').slideToggle();
+                    $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+                });
+            });
+        </script>
+   </body>
+
+</html>

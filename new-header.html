@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Slidedown <menu></menu></title>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+       <link rel="stylesheet" href="./assets/css/mycss.css">
+      
+       <style>
+/*
+           header {
+               width: 100%;
+               height: 200px;
+               background: lightgray;
+               color: black;
+           }
+
+
+           .main-menu {
+               position: relative;
+           }
+*/
+           #main-navigation {
+               position: absolute;
+               display: none;
+
+           }
+           .no-list {
+               list-style-type: none;
+           }
+           .no-deco {
+               text-decoration: none;
+           }
+
+           #sub-navigation {
+               position: absolute;
+               display: none;
+           }
+
+           #sub-menu {
+               display: none;
+           }
+
+           .icon-size {
+               display: flex;
+
+               align-items: center;
+               width: 30px;
+               height: 30px;
+            
+           }
+           .no-deco {
+               color: black;
+           }
+
+           .bamberg {
+               margin-top: 20px;
+               margin-left: 20px;
+           }
+
+           i#menuToggle {
+               margin-top: 20px;
+               margin-left: 20px;
+           }
+           ul.no-list {
+               margin-top: 70px;
+           }
+           ul#sub-menu {
+               margin-top: 0px;
+           }
+           .logo {
+               margin-left: 100px;
+           }
+           a:hover {
+               color: red;
+           }
+        
+       </style>
+           
+   </head>
+
+  
+
+   <body>
+
+
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-12">
+                        <header>
+                            <div class="header-wrap">
+                                <i id="menuToggle" class="zmdi zmdi-menu icon-size zmdi-hc-2x"></i>
+                                <nav id="main-navigation">
+                                    <ul class="no-list">
+                                        <li><a href="./index.html" class="no-deco">HOME</a></li>
+                                        <li><a href="./year-2021.html" class="no-deco">YEAR 2021</a></li>
+                                        <li id="subMenuToggle"><a href=#" class="no-deco">TWO DECADES</a>
+                                            <ul id="sub-menu" class="no-list">
+                                                <li><a href="./year-1891-1910.html" class="no-deco">YEAR 1891-1910</a></li>
+                                                <li><a href="./year-1911-1930.html" class="no-deco">YEAR 1911-1930</a></li>
+                                                <li><a href="./year-1931-1950.html" class="no-deco">YEAR 1931-1950</a></li>
+                                                <li><a href="./year-1951-1970.html" class="no-deco">YEAR 1951-1970</a></li>
+                                                <li><a href="./year-1971-1990.html" class="no-deco">YEAR 1971-1990</a></li>
+                                                <li><a href="./year-1991-2010.html" class="no-deco">YEAR 1991-2010</a></li>
+                                                <li><a href="./year-2011-2021.html" class="no-deco">YEAR 2011-2021</a></li>
+                                            </ul>
+                            
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            
+                                <div class="logo">
+                                    <img src="./assets/images/UNEX-LOGO.png">
+                                </div>
+                            
+                            </div>
+                        </header>
+                    </div>
+                    
+                </div>
+            </header>
+        </div>
+ 
+     <!-- jQuery lib -->
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js"
+     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous">
+</script>
+<script src="./assets/js/lightbox.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+      $('#menuToggle').on('click', function() {
+        var mainNav = $('#main-navigation');
+        var subMenu = $('#sub-menu');
+
+        if(mainNav.hasClass('active')) {
+          mainNav.slideUp().removeClass('active');
+          subMenu.slideUp().removeClass('active');
+        } else {
+          mainNav.slideDown().addClass('active');
+        }
+      });
+
+      $('#subMenuToggle').on('click', function() {
+          var subMenu = $('#sub-menu');
+
+          if (subMenu.hasClass('active')) {
+          subMenu.slideUp().removeClass('active');
+        } else {
+          subMenu.slideDown().addClass('active');
+        }
+      });
+    });
+  </script>
+
+   </body>
+</html>
