@@ -32,37 +32,24 @@ body {
 bold-font {
     font-weight: 700;
 }
+
 regular-font {
     font-weight: 400;
 }
-
-/*****************************************************************/
-/* Bootstrap grid container and common portion css classes begin */
-/*****************************************************************/
-.grid-container {
-     max-width: 1400px;
+a:hover {
+    color: red;
 }
 
-/*
-.flexitem {
-    display: flex;
-    align-items: center;
-    min-height: 6.25rem;
-    padding: 1rem;
+/***********************************************/
+/* Bootstrap grid container and common portion */
+/***********************************************/
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
-*/
-
-.my-hero-img {
-    width: 100%;
-    height: 300px;
-}
-
-/***************************************************************/
-/* Bootstrap grid container and common portion css classes end */
-/***************************************************************/
 
 /****************************************/
-/* jQuery accordion usage in index.html */
+/*           jQuery accordion           */
 /****************************************/
 .accordion {
     max-width: auto;
@@ -79,35 +66,9 @@ regular-font {
     cursor: pointer;
 }
 
-/**********************************************/
-
-/* Footer */
-.footer-wrap {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 150px;
-    align-items: center;
-    padding: 0 1rem;
-    background-color: rgba(0, 32, 62, 0.3);
-}
-.footer-logo {
-    height: 150px;
-}   
-.no-deco {
-
-    text-decoration: none;
-}
-.footer-listitem {
-    margin-left: 1rem;
-}
-.footer-lastitem {
-    margin-right: auto;
-}
-
-/**********************************************/
-/* Index & YEAR 2021 common css classes begin */
-/**********************************************/
-
+/*****************************/
+/* Index & YEAR 2021 common  */
+/*****************************/
 .common-wrapper {
     display: flex;
     flex-direction: column;
@@ -127,32 +88,85 @@ regular-font {
 }
 .common-video {
     width: 100%;
-    height: 400px;
+    margin-top: 5px;
 }
-.index-picture-wrapper {
+@media screen and (min-width: 320px) {
+    .common-video {
+        height: 210px;
+    }
+}
+@media screen and (min-width: 550px) {
+    .common-video {
+        height: 300px;
+    }
+}
+.index-picture-wrapper-sm {
     display: flex;
     align-items: center;
     position: relative;
-    
+}
+
+.index-picture-wrapper-lg {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    margin: 20px 10px;
+}
+.index-picture {
+    width: auto;
+}   
+@media screen and (min-width: 320px) {
+    .index-picture-wrapper-sm {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: auto;
+    }
+    .index-picture-wrapper-lg {
+        display: none;
+    }
+}
+@media screen and (min-width: 550px) {
+    .index-picture-wrapper-sm {
+        display: none;
+    }
+    .index-picture-wrapper-lg {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
 }
 .index-picture {
     margin-top: 30px;
     margin-bottom: 30px;
-
-
 }
 .y2021-picture {
     width: 70%;
     margin-left: 10%;
     
 }
-/********************************************/
-/* Index & YEAR 2021 common css classes end */
-/********************************************/
 
-/******************************************/
-/* Two decades dedicate css classes begin */
-/******************************************/
+/**************************/
+/*  Two decades dedicate  */
+/**************************/
+.decade-hero-img {
+    height: 100%;
+    margin-top: 5px;
+}
+
+/*
+@media screen and (min-width: 320px) {
+    .decade-hero-img {
+        display: none;
+    }
+}
+@media screen and (min-width: 550px) {
+    .decade-hero-img {
+        display: flex;
+    }
+}
+*/
 .decade-wrapper {
     display: flex;
     flex-direction: column;
@@ -172,6 +186,7 @@ regular-font {
 .decade-text {
     color: black;
     padding: 0 5px 0 5px;
+    margin-bottom: 10px;
 }
 @media screen and (min-width: 320px) {
     .decade-text {
@@ -189,7 +204,6 @@ regular-font {
         order: 3;
     }
 }
-
 .decade-picture-wrapper {
     display: flex;
     align-items: center;
@@ -197,8 +211,8 @@ regular-font {
     
 }
 .decade-pictuer-wrapped-item {
-     margin-top: 30px;
-     margin-bottom: 30px;
+     margin-top: 15px;
+     margin-bottom: 15px;
      border-radius: 7px;
 }
 /* Need it to support decade pictures */
@@ -206,27 +220,99 @@ regular-font {
     max-width: 100%;
 }
 
-/****************************************/
-/* Two decades dedicate css classes end */
-/****************************************/
-
-.logo {
-    display: flex;
-    margin: 10px auto 10px 5px;
-    height: 50px;
-
+/***************************************/
+/* Header area including dropdown menu */
+/***************************************/
+.header-wrap {
+    display: box;
+    table-layout: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #CFDD45;
+}
+.header-logo {
+    display: table-cell;
+    width: 30%;
+    vertical-align: middle;
+}
+.header-logo-position {
+    height: 40px;
+    margin-top: 15px;
+}
+.header-menu {
+    display: table-cell;
+    width: 20%;
     position: relative;
 }
-.header-wrap {
+.menu-icon-position { /* Hamberger */
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.main-menu {
+   position: absolute;
+   display: none;
+   margin-left: -15px; 
+   width: 230px;
+   background-color: #CFDD45;
+   z-index: 10;
+}
+#sub-menu {
+   display: none;
+}
+.menu-nolist-display {
+  /* border: solid 2px; */
+    list-style-type: none;
+}
+.menu-nounderline {
+    text-decoration: none;
+    color: black;
+}
+.menu-icon-position:hover, .menu-nolist-display:hover {
+    cursor: pointer;
+}
+
+
+.no-underline {
+    text-decoration: none;
+}
+/**********************************/
+/*           Footer area          */
+/**********************************/
+.footer-wrap {
     display: flex;
-    height: 70px;
-    background-color: #ddd5c7;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    border-top: solid 3px;
+/*    background-color: rgba(0, 32, 62, 0.3); */
 }
-.sub-down {
-    top: 50px;
-    left: -135px;
-    background-color:lightskyblue;
+.footer-logo {
+    height: 150px;
+}   
+.footer-text { 
+    margin-left:20px;
+    display: flex;
+    align-items: center;
 }
-/*******************************************/
-/* Header area including dropdown menu end */
-/*******************************************/
+.footer-sns {
+    display: flex;
+    align-items: center;
+}
+
+/*****************************************/
+/*  jQuery Slick slide show (carousel)   */
+/*****************************************/ 
+.slick-next:before, .slick-prev:before {
+    color: black;
+}
+.image-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.slick-list {
+    margin: 0 -5px;
+}
+.slick-slide {
+    padding: 0 5px;
+}

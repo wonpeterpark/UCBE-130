@@ -15,63 +15,75 @@
 
        <!-- Including material design icons  -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-       
-       <link rel="stylesheet" href="./assets/css/mycss.css">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      
-       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-       <!-- Following link getting the error -->
-       <link rel="stylesheet" href="/resources/demos/style.css">
 
        <!-- Lightbox stuffs -->
        <link rel="stylesheet" href="./assets/css/lightbox.min.css">
 
+       <!-- Slick link to support Carousel -->
+       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"> 
+
+       <!-- My css at last item in the head -->
+       <link rel="stylesheet" href="./assets/css/mycss.css">
    </head>
 
    <body>
        <div class="container">
-           <header>
+            <header>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="header-wrap">
-                            <div class="logo">
-                                <img src="./assets/images/UNEX-LOGO.png">
-                            </div>
-                            <ul id="menu">
-                                <li>
-                                    <div>
-                                        <a href="./flexbox.html" class="deco-none">HOME</a>
-                                    </div>
-                                </li>
-                                <li><div>YEAR 2021</div></li>
-                                <li><div>TWO DECADES</div>
-                                    <ul>
-                                        <li><a href="./year-1891-1910.html" class="deco-none sub-down">YEAR 1891-1910</a></li>
-                                        <li><a href="./year-19111-1930.htm" class="deco-none sub-down">YEAR 1911-1930</a></li>
-                                        <li><a href="./year-1931-1950.htm" class="deco-none sub-down">YEAR 1931-1950</a></li>
-                                        <li><a href="./year-1951-1970.htm" class="deco-none sub-down">YEAR 1951-1970</a></li>
-                                        <li><a href="./year-1971-1990.htm" class="deco-none sub-down">YEAR 1971-1990</a></li>
-                                        <li><a href="./year-1991-2010.htm" class="deco-none sub-down">YEAR 1991-2010</a></li>
-                                        <li><a href="./year-2011-2020.htm" class="deco-none sub-down">YEAR 2011-2020</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                    <div class="col-12 header-wrap">
+                        <div class="header-menu">
+                            <i id="menuToggle" class="zmdi zmdi-menu zmdi-hc-2x menu-icon-position"></i>
+                            <nav id="main-navigation" class="main-menu">
+                                <ul class="menu-nolist-display">
+                                    <li id="subMenuToggle"><a href="#" class="menu-nounderline">TWO DECADES</a>
+                                        <ul id="sub-menu" class="menu-nolist-display">
+                                            <li><a href="./year-1891-1910.html" class="menu-nounderline">YEAR 1891-1910</a></li>
+                                            <li><a href="./year-1911-1930.html" class="menu-nounderline">YEAR 1911-1930</a></li>
+                                            <li><a href="./year-1931-1950.html" class="menu-nounderline">YEAR 1931-1950</a></li>
+                                            <li><a href="./year-1951-1970.html" class="menu-nounderline">YEAR 1951-1970</a></li>
+                                            <li><a href="./year-1971-1990.html" class="menu-nounderline">YEAR 1971-1990</a></li>
+                                            <li><a href="./year-1991-2010.html" class="menu-nounderline">YEAR 1991-2010</a></li>
+                                            <li><a href="./year-2011-2020.html" class="menu-nounderline">YEAR 2011-2020</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./year-2021.html" class="menu-nounderline">YEAR 2021</a></li>
+                                    <li><a href="./index.html" class="menu-nounderline">HOME</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-logo">
+                            <img src="./assets/images/UNEX-LOGO.png" class="header-logo-position">
                         </div>
                     </div>
                 </div>
-           </header>
-
+            </header>
+     
            <section>
                 <div class="row">
-                    <div class="col-12">
-                        <img class="my-hero-img" src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampanileWindow_1200_KeeganHouser.jpg">
+                    <div class="col-1"></div>
+                    <div class="col-10 decade-hero-img">
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/Campanile_1200_KeeganHouser.jpg" />
+                        </div>
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampanileWindow_1200_KeeganHouser.jpg" />
+                        </div>
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampusPanorama_1200_KeeganHouser.jpg" />
+                        </div>
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampusSunset_1200_KeeganHouser.jpg" />
+                        </div>
                     </div>
                 </div>
             </section>
            
-           <main>
+            <main>
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="decade-wrapper">
@@ -82,7 +94,7 @@
                                 <p><strong>&#160;&#160;&#160;F</strong>ollowing years of calls from the public to open access to Berkeley’s excellent courses and 
                                     programs, University Extension came to life in 1891 when three professors crossed the Bay 
                                     by ferry to offer courses in San Francisco in history (Prof. Bacon), 
-                                    mathematics (Prof. Stringham) and Englishliterature (Prof. Gayley)​2​. 
+                                    mathematics (Prof. Stringham) and Englishliterature (Prof. Gayley)​​. 
                                     These long awaited education opportunities were met with much enthusiasm by the people of 
                                     San Francisco, more than 800 people attended the first classes. 
                                     However, following the official approval of Extension by the Academic Senate in 1892, 
@@ -127,14 +139,20 @@
                                     leadership of the former Cornell history professor Henry Morse Stephens. Stephens was a fervent
                                     supporter of the original ideology of university extension’s: “I am longing to try my hand on a great
                                     Extension scheme on the Oxford line - I know I can do it and make a success of it.” In contrast to the
-                                    initial ‘free lectures’ model of Gayley and his colleagues, Stephens designed and organized lecturesto meet the needs and interests of adult professionals across the state. This model was operating
+                                    initial ‘free lectures’ model of Gayley and his colleagues, Stephens designed and organized lectures to meet the needs and 
+                                    interests of adult professionals across the state. 
+                                </p>    
+                                <p class="remainder-text">    
+                                    This model was operating
                                     largely independently of the Academic Senate, used mainly non-faculty lecturers offering non-credit
                                     courses, and was self-funded through a subscription model. With this extremely agile and
                                     student-centric model, he created the fundamental concept of Continuing Education as we know it
                                     today. The success of this model and his own energy, engagement and popularity, allowed
-                                    corresExtension to grow exponentially, reaching its peak of 15 centers around the state of California
+                                    corres Extension to grow exponentially, reaching its peak of 15 centers around the state of California
                                     in 1905. However, when Stephens continued his career with other university appointments after
-                                    1905, Extension activities declined until they ultimately ceased in 1910.<p>
+                                    1905, Extension activities declined until they ultimately ceased in 1910.
+                                </p>
+                                <button type="button" class="toggle-button">show more</button>    
                             </div>
                             <div class="decade-picture-wrapper">
                                 <a href="./assets/images/1900-pic1.png"
@@ -165,44 +183,88 @@
                         </div>
                     </div>
                 </div>
-           </main>
+            </main>
                 
-           <footer>
+            <footer>
                 <div class="row">
-                    <div class="col-12">
-                        <div class="footer-wrap">
-                            <div class="footer-listitem">
-                                <a href="./index.html"><img src="./assets/images/UCBE130logo.png" class="footer-logo"> </a>
-                            </div> 
-
-                            <div  class="footer-lastitem">
-                                <p>UC Berkeley Extension</p>
-                                <a href="https://www.youtube.com/channel/UCZAXKyvvIV4uU4YvP5dmrmA" class="no-deco">
-                                    <i class="zmdi zmdi-hc-3x zmdi-youtube-play"></i>
-                                </a>
-                                <a href="https://www.facebook.com/UCBerkeley/" class="no-deco">
-                                    <img src="https://img.icons8.com/color/48/000000/facebook.png">
-                                </a>
-                                <a href="https://twitter.com/UCBerkeley/"  class="no-deco">
-                                    <i class="zmdi zmdi-hc-3x zmdi-twitter-box"></i>
-                                </a>
-                            </div>
-                        </div>         
+                    <div class="footer-wrap">
+                        <div class="footer-text">
+                            <address>
+                                Written by <a href="mailto:won.peter.park@gmail.com">Peter Park</a><br>
+                                Gold River, CA USA
+                            </address>
+                        </div>
+                        <div class="footer-sns">
+                            <a href="https://www.youtube.com/channel/UCZAXKyvvIV4uU4YvP5dmrmA" class="no-underline">
+                                <i class="zmdi zmdi-hc-3x zmdi-youtube-play"></i>
+                            </a>
+                            <a href="https://www.facebook.com/UCBerkeley/" class="no-underline">
+                                <img src="https://img.icons8.com/color/48/000000/facebook.png">
+                            </a>
+                            <a href="https://twitter.com/UCBerkeley/"  class="no-underline">
+                                <i class="zmdi zmdi-hc-3x zmdi-twitter-box"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./index.html"><img src="./assets/images/UCBE130logo.png" class="footer-logo"> </a>
+                        </div>        
                     </div>
-                </div>  
-            </footer>    
+                </div>
+            </footer>  
        </div>
 
-       <!-- jQuery CDN minified link -->
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-       <script src="./assets/js/lightbox.min.js"></script>
-       
-       <!--script src="https://code.jquery.com/jquery-1.12.4.js"></script-->
-       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- jQuery lib -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+        </script>
 
-       <script>
-            $(document).ready(function() { 
-                 $("#menu").menu();
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./assets/js/lightbox.min.js"></script>
+            
+        <!-- Slick link to support Carousel -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
+        <script>
+            $(document).ready(function() {
+                $('.toggle-button').on('click', function(){
+                    const buttonText = $(this).text().toLowerCase();
+                    $(this).prev('.remainder-text').slideToggle();
+                    $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+                });
+
+                /* Drop down main menu */
+                $('#menuToggle').on('click', function() {
+                    var mainNav = $('#main-navigation');
+                    var subMenu = $('#sub-menu');
+
+                    if(mainNav.hasClass('active')) {
+                        mainNav.slideUp().removeClass('active');
+                        subMenu.slideUp().removeClass('active');
+                    } else {
+                        mainNav.slideDown().addClass('active');
+                    }
+                });
+                /* Drop down sub menu */
+                $('#subMenuToggle').on('click', function() {
+                    var subMenu = $('#sub-menu');
+
+                    if (subMenu.hasClass('active')) {
+                        subMenu.slideUp().removeClass('active');
+                    } else {
+                        subMenu.slideDown().addClass('active');
+                    }
+                });
+
+                /* Slick carousel */
+                $('.decade-hero-img').slick({
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                });
             });
         </script>
    </body>

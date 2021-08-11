@@ -15,34 +15,72 @@
 
        <!-- Including material design icons  -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-       
-       <link rel="stylesheet" href="./assets/css/mycss.css">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      
-       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-       <!-- Following link getting the error -->
-       <link rel="stylesheet" href="/resources/demos/style.css">
 
        <!-- Lightbox stuffs -->
        <link rel="stylesheet" href="./assets/css/lightbox.min.css">
 
+       <!-- Slick link to support Carousel -->
+       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"> 
+
+       <!-- My css at last item in the head -->
+       <link rel="stylesheet" href="./assets/css/mycss.css">
    </head>
 
    <body>
        <div class="container">
-           <header>
-
-
-           </header>
+            <header>
+                <div class="row">
+                    <div class="col-12 header-wrap">
+                        <div class="header-menu">
+                            <i id="menuToggle" class="zmdi zmdi-menu zmdi-hc-2x menu-icon-position"></i>
+                            <nav id="main-navigation" class="main-menu">
+                                <ul class="menu-nolist-display">
+                                    <li id="subMenuToggle"><a href="#" class="menu-nounderline">TWO DECADES</a>
+                                        <ul id="sub-menu" class="menu-nolist-display">
+                                            <li><a href="./year-1891-1910.html" class="menu-nounderline">YEAR 1891-1910</a></li>
+                                            <li><a href="./year-1911-1930.html" class="menu-nounderline">YEAR 1911-1930</a></li>
+                                            <li><a href="./year-1931-1950.html" class="menu-nounderline">YEAR 1931-1950</a></li>
+                                            <li><a href="./year-1951-1970.html" class="menu-nounderline">YEAR 1951-1970</a></li>
+                                            <li><a href="./year-1971-1990.html" class="menu-nounderline">YEAR 1971-1990</a></li>
+                                            <li><a href="./year-1991-2010.html" class="menu-nounderline">YEAR 1991-2010</a></li>
+                                            <li><a href="./year-2011-2020.html" class="menu-nounderline">YEAR 2011-2020</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./year-2021.html" class="menu-nounderline">YEAR 2021</a></li>
+                                    <li><a href="./index.html" class="menu-nounderline">HOME</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header-logo">
+                            <img src="./assets/images/UNEX-LOGO.png" class="header-logo-position">
+                        </div>
+                    </div>
+                </div>
+            </header>
            
            <section>
-                <div class="row">
-                    <div class="col-12">
-                        <img class="my-hero-img" src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampanileWindow_1200_KeeganHouser.jpg">
+            <div class="row">
+                <div class="col-1"></div>
+                    <div class="col-10 decade-hero-img">
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/Campanile_1200_KeeganHouser.jpg" />
+                        </div>
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampanileWindow_1200_KeeganHouser.jpg" />
+                        </div>
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampusPanorama_1200_KeeganHouser.jpg" />
+                        </div>
+                        <div>
+                            <img class="image-responsive" 
+                                src="https://webtemplate.berkeley.edu/lib/img/hero/campus/CampusSunset_1200_KeeganHouser.jpg" />
+                        </div>
                     </div>
-                </div> 
+                </div>
            </section>
           
            <main>
@@ -55,7 +93,7 @@
                             <div class="decade-text">
                                 <p><strong>&#160;&#160;&#160;B</strong>y the early 1950s, the model of a typical extension student was 
                                     someone who already at least had some higher education. About 80% had college experience, 40% had earned 
-                                    a bachelor's degree;and 67% were employed professional, semi professional or managerial occupations. 
+                                    a bachelor's degree and 67% were employed professional, semi professional or managerial occupations. 
                                     Under the direction of Professor Woods, UC Extension moved successfully in two directions at once: First, 
                                     it began offering "useful training" unrelated to traditional degree course offerings, and second, 
                                     it shifted the emphasis of the class program from lower-division to upper-division and graduate work. 
@@ -108,7 +146,10 @@
                                     During the 1960s, Extensions on most of the campuses participated in the Great Society movement
                                     with a variety of community development experiments, like the Oakland Project, which brought
                                     government agencies and independent citizen action groups together to improve their efficiency
-                                    and effectiveness. In 1965, the Western Center for Community Education and Development was
+                                    and effectiveness. 
+                                </p>    
+                                <p class="remainder-text">   
+                                    In 1965, the Western Center for Community Education and Development was
                                     established at UCLA Extension "to provide continuing assistance to organizations, agencies and
                                     groups engaged in seeking solutions to community problems.” UCLA Extension also had one of the
                                     largest Peace Corps trainings in the country.
@@ -118,8 +159,11 @@
                                     Given the increasing demand in the job market for specialization, those seeking employment or
                                     advancement needed an efficient way to obtain training. Extension responded by developing
                                     certificate programs-planned sequences of courses designed under the guidance of advisory
-                                    committees of campus faculty and top professionals.<p>
+                                    committees of campus faculty and top professionals.
+                                </p>
+                                <button type="button" class="toggle-button">show more</button>
                             </div>
+
                             <div class="decade-picture-wrapper">
                                 <a href="./assets/images/1940-pic1.png"
                                     data-lightbox="year-1940s" 
@@ -152,43 +196,85 @@
            </main>
            
            <footer>
-            <div class="row">
-                <div class="col-12">
+                <div class="row">
                     <div class="footer-wrap">
-                        <div class="footer-listitem">
-                            <a href="./index.html"><img src="./assets/images/UCBE130logo.png" class="footer-logo"> </a>
-                        </div> 
-
-                        <div  class="footer-lastitem">
-                            <p>UC Berkeley Extension</p>
-                            <a href="https://www.youtube.com/channel/UCZAXKyvvIV4uU4YvP5dmrmA" class="no-deco">
+                        <div class="footer-text">
+                            <address>
+                                Written by <a href="mailto:won.peter.park@gmail.com">Peter Park</a><br>
+                                Gold River, CA USA
+                            </address>
+                        </div>
+                        <div class="footer-sns">
+                            <a href="https://www.youtube.com/channel/UCZAXKyvvIV4uU4YvP5dmrmA" class="no-underline">
                                 <i class="zmdi zmdi-hc-3x zmdi-youtube-play"></i>
                             </a>
-                            <a href="https://www.facebook.com/UCBerkeley/" class="no-deco">
+                            <a href="https://www.facebook.com/UCBerkeley/" class="no-underline">
                                 <img src="https://img.icons8.com/color/48/000000/facebook.png">
                             </a>
-                            <a href="https://twitter.com/UCBerkeley/"  class="no-deco">
+                            <a href="https://twitter.com/UCBerkeley/"  class="no-underline">
                                 <i class="zmdi zmdi-hc-3x zmdi-twitter-box"></i>
                             </a>
                         </div>
-                    </div>         
+                        <div>
+                            <a href="./index.html"><img src="./assets/images/UCBE130logo.png" class="footer-logo"> </a>
+                        </div>        
+                    </div>
                 </div>
-            </div>  
-        </footer>
-       </div>
+            </footer>
+        </div>
 
-       <!-- jQuery CDN minified link -->
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-       <script src="./assets/js/lightbox.min.js"></script>
+        <!-- jQuery lib -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous">
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./assets/js/lightbox.min.js"></script>
+              
+        <!-- Slick link to support Carousel -->
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
        
-       <!--script src="https://code.jquery.com/jquery-1.12.4.js"></script-->
-       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.toggle-button').on('click', function(){
+                    const buttonText = $(this).text().toLowerCase();
+                    $(this).prev('.remainder-text').slideToggle();
+                    $(this).text(buttonText === 'show more' ? 'show less' : 'show more');
+                });
 
-       <script>
-            $(document).ready(function() { 
-                 $("#menu").menu();
+                $('#menuToggle').on('click', function() {
+                    var mainNav = $('#main-navigation');
+                    var subMenu = $('#sub-menu');
+
+                    if(mainNav.hasClass('active')) {
+                        mainNav.slideUp().removeClass('active');
+                        subMenu.slideUp().removeClass('active');
+                    } else {
+                        mainNav.slideDown().addClass('active');
+                    }
+                });
+
+                $('#subMenuToggle').on('click', function() {
+                    var subMenu = $('#sub-menu');
+
+                    if (subMenu.hasClass('active')) {
+                        subMenu.slideUp().removeClass('active');
+                    } else {
+                        subMenu.slideDown().addClass('active');
+                    }
+                });
+                /* Slick carousel */
+                $('.decade-hero-img').slick({
+                    dots: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                });
             });
         </script>
-   </body>
+    </body>
 
 </html>
