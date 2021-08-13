@@ -114,7 +114,9 @@ a:hover {
     margin: 20px 10px;
 }
 .index-picture {
-    width: auto;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }   
 @media screen and (min-width: 320px) {
     .index-picture-wrapper-sm {
@@ -137,14 +139,9 @@ a:hover {
         position: relative;
     }
 }
-.index-picture {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 .y2021-picture {
     width: 70%;
-    margin-left: 10%;
-    
+    margin-left: 10%;  
 }
 
 /**************************/
